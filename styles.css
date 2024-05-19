@@ -1,0 +1,323 @@
+body {
+  background-color: #401f71; /*401f71*/
+  height:100%;
+  margin 0;
+  display: flex;
+      flex-direction: column;
+}
+
+.imgAvatar {
+  border-radius: 80%;
+  width: 80%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+  /*height: 50%;*/
+}
+
+.botones {
+  background-color: #a3ffd6;
+  color: #401f71;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: medium;
+}
+
+.botones:hover {
+  background-color: #58a399;
+}
+
+i {
+  color: #fdaf7b;
+  margin-top: 2%;
+  margin-right: 1%;
+}
+
+i:hover {
+  color: #be7b72;
+}
+
+.inicio {
+  /*margin-top: 250px;*/
+  /*top: 0;*/
+  /*padding-top: 15%;*/
+  /*padding-bottom: 5%;*/
+  /*background-color: #58A399;*/
+  /*padding:290px;*/
+  width: 100%;
+  height: 100%;
+  /*padding-left: 0;*/
+  display: grid;
+  /*padding-right: 5%;*/
+}
+
+.sobreMi {
+  /*padding-top: 20%;*/
+  /*padding-bottom: 10%;*/
+  /*background-color: #58A399;*/
+  /*padding:290px;*/
+  /* padding-left: 0;
+  display: grid;
+  padding-right: 5%; */
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+.porfolio {
+  /*padding-top: 15%;*/
+  /*padding-bottom: 10%;*/
+  /*background-color: #58A399;*/
+  /*padding:290px;*/
+  /* padding-left: 0;
+  display: grid;
+  padding-right: 5%; */
+  width: 100%;
+  height: 100%;
+  display: grid;
+  
+}
+.educacion {
+  /*padding-top: 20%;*/
+  /*padding-bottom: 10%;*/
+  /*background-color: #58A399;*/
+  /*padding:290px;*/
+  /* padding-left: 0;
+  padding-right: 5%; */
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0px; /*CAMBIAR ESTO A 250px para que se mantenga abierto*/
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #824d74;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 0px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fdaf7b;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #be7b72;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 0px;
+  margin-left: 25px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.containerNavbar {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fdaf7b;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+/*GOOGLE FONTS*/
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.jersey-15-regular {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*TRABAJOS DEL PORFOLIO*/
+
+.gallery {
+  background-color: white;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%; /*original : 100%*/
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 15%; /*24.99999%*/
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%; /*49.99999%*/
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+/*.clearfix:after {
+  content: "Roboto";
+  display: table;
+  clear: both;
+}*/
